@@ -1,0 +1,9 @@
+Comparação de carroçarias — imagens de estúdio
+
+Método: ferramenta integrada de geração de imagens (image_gen).
+Sportback: public/media/rear.webp (imagem anteriormente criada e escolhida pelo utilizador).
+SUV: public/media/comparison-suv-studio.webp; original PNG em comparison-suv-studio.png.
+Ambas são visualizações ilustrativas, identificadas como tal no site. A versão SUV não representa um segundo automóvel à venda.
+
+Prompt final:
+Use case: precise-object-edit. Image 1 is the EDIT TARGET: black Audi e-tron Sportback in dark studio, rear left three-quarter view. Image 2 is a SHAPE REFERENCE ONLY of a regular non-Sportback Audi e-tron SUV. Make image 1 identical in every respect EXCEPT convert its rear upper body into the exact regular original Audi e-tron SUV shape from image 2. Roof stays high and nearly horizontal farther rearward; regular SUV D-pillars, compact upright rectangular rear side quarter glass, tall rear hatch with more upright rear windscreen and a rear wiper, roof-mounted spoiler (not Sportback's low ducktail). Carefully match original 2022 e-tron SUV anatomy in image2. Keep image1 angle, framing, wheel centers, wheels, wheelbase, thin virtual camera mirrors, black paint, lower body S line trims, silver bumper accents, studio lights, background and floor reflections unchanged. Do not copy image2 wheels, conventional mirrors, outdoors, plate lettering or logos from dealer. Preserve blank white numberplate and Audi rings from target. Output one 16:9 photorealistic studio photograph, composition precisely registered to image1 for a before/after reveal slider. No split image, no labels, no text.

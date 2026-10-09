@@ -1,0 +1,6 @@
+Emblema da faixa S line
+Ferramenta: image_gen integrada. Fundo transparente.
+Original gerado: public/media/sline-badge-transparent.png
+Versão otimizada usada no site: public/media/sline-badge-transparent.webp
+Prompt:
+Use case: background-extraction. Edit the attached Audi S line metallic badge image. Remove ONLY the white background outside the physical badge and produce a clean cutout on genuine transparent alpha. Preserve exactly the long silver/chrome metal badge, rounded ends, red slanted inset on the left, raised metallic S and the engraved 'line' lettering, their existing proportions and metallic shading. Do not redesign or replace the badge, do not flatten it into a graphic. Remove white matte/fringing outside its outer silhouette. Tightly crop the canvas around the whole badge with a small transparent margin. No added text, no added shadow outside the badge, no new background.
