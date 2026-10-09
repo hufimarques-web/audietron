@@ -66,3 +66,5 @@ Mobile: estrada e interior partilham o mesmo plano de vídeo, centrado no ecrã 
 ## Equipamento abaixo da abertura
 
 Comparador SUV/Sportback, suspensão pneumática com recriação do Audi drive select, vídeos verticais de jantes e faróis, interior e ficha de equipamento. Os dois vídeos de equipamento são H.264, sem som, e reproduzem apenas enquanto estão visíveis, com controlo de pausa e suporte a movimento reduzido.
+
+O botão “Descobrir” salta para a galeria de fotografias reais. “Ver filme” abre `public/media/film.mp4`, fornecido pelo proprietário (0907 (1).mp4), com controlos e áudio.
