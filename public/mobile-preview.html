@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pré-visualização mobile — Audi</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#202124;color:#eee;font:13px Arial;height:100dvh;overflow:hidden;display:flex;flex-direction:column;align-items:center;gap:12px;padding:14px}label{display:flex;align-items:center;justify-content:space-between;gap:16px;flex:none}select{background:#111;color:white;border:1px solid #555;border-radius:4px;padding:7px}.device{position:relative;flex:none;box-shadow:0 0 0 1px #555}iframe{position:absolute;inset:0;border:0;background:#090b0d;transform-origin:top left}footer{display:flex;gap:20px;align-items:center;flex:none;font-size:11px;color:#b4b6bb}a{color:#eee}
+</style>
+<label>Pré-visualização mobile<select aria-label="Tamanho do ecrã"><option value="390,844">390 × 844</option><option value="320,568">320 × 568</option><option value="430,932">430 × 932</option></select></label>
+<div class="device"><iframe src="/" title="Site Audi em ecrã móvel" allow="autoplay"></iframe></div>
+<footer><span>Faz scroll para avançar o vídeo</span><a href="/">Abrir o site</a></footer>
+<script>
+const size=document.querySelector('select'),frame=document.querySelector('iframe'),device=document.querySelector('.device');
+function fit(){
+ const [w,h]=size.value.split(',').map(Number);
+ const scale=Math.min(1,(innerWidth-28)/w,Math.max(1,innerHeight-108)/h);
+ frame.style.width=w+'px';frame.style.height=h+'px';frame.style.transform=`scale(${scale})`;
+ device.style.width=w*scale+'px';device.style.height=h*scale+'px';
+}
+size.addEventListener('change',fit);addEventListener('resize',fit);fit();
+// The preview has one scroll target. Gestures on the surrounding desktop also
+// advance the actual document, without intercepting touch scroll inside it.
+addEventListener('wheel',e=>{
+ if(e.ctrlKey||e.target.closest('select'))return;
+ const unit=e.deltaMode===1?16:e.deltaMode===2?frame.clientHeight:1;
+ frame.contentWindow.scrollBy({top:e.deltaY*unit,behavior:'instant'});e.preventDefault();
+},{passive:false});
+</script>
+</html>
